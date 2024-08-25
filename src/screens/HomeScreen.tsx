@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
 
 import React, {useEffect} from 'react';
 import {
@@ -19,9 +13,10 @@ import {
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import {addTodoItem, getTodoItems} from './helper';
+import { addTodoItem, getTodoItems } from '../helper';
 
-function App(): JSX.Element {
+const HomeScreen = () =>{
+// function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -100,4 +95,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default HomeScreen;
