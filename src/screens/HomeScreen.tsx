@@ -14,6 +14,7 @@ import {
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import { addTodoItem, getTodoItems } from '../helper';
+import { Fonts } from '../styles';
 
 const HomeScreen = () =>{
 // function App(): JSX.Element {
@@ -77,6 +78,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
+    fontFamily: Fonts.REGULAR
   },
   sectionDescription: {
     marginTop: 8,
